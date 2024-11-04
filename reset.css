@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-theme1: #2b5b5f;
+  --bg-theme2: #eaae36;
+  --bg-theme3: #ff6546;
+  --bg-theme4: #1d3155;
+  --bg-black: #0a2223;
+  --bg-white: #ffffff;
+  --bg-accent: #e9b546;
+  --bg-random1: #ff6546;
+  --bg-random2: #f3a8c2;
+  --bg-random3: #f68c87;
+
+  font-size: 16px;
+}
+
+body {
+  font-size: 2rem;
+  line-height: 1.5; /* Improve readability */
+  font-family: "Mulish", sans-serif;
+  background-color: var(--bg-black);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul,
+ol {
+  list-style: none; /* Remove bullet points */
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use inherited color */
+}
+
+table {
+  border-collapse: collapse; /* Remove gaps between cells */
+  width: 100%; /* Make tables responsive */
+}
+
+th,
+td {
+  padding: 0; /* Remove default padding */
+  text-align: left; /* Align text to the left */
+}
+
+img {
+  width: 100%;
+  max-width: 100%; /* Prevent images from overflowing */
+  height: auto; /* Maintain aspect ratio */
+}
+
+video {
+  max-width: 100%; /* Make videos responsive */
+  height: auto;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit; /* Ensure consistent font */
+  font-size: inherit; /* Use inherited font size */
+}

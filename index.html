@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto&family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <title>Chiakitea | For Tea Lovers</title>
+  </head>
+  <body>
+    <!-- START OF NAV -->
+    <nav id="nav">
+      <ul>
+        <li>
+          <a href="#section-1">
+            <img src="./assets/menu-item.svg" alt="Menu Item 1" />
+            <span>Welcome</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section-2">
+            <img src="./assets/menu-item2.svg" alt="Menu Item 2" />
+            <span>Pick a Cup</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section-3">
+            <img src="./assets/menu-item3.svg" alt="Menu Item 3" />
+            <span>Write Your Thoughts</span>
+          </a>
+        </li>
+      </ul>
+      <button class="menu" id="menu">
+        <img src="./assets/menu.svg" alt="menu" />
+      </button>
+    </nav>
+    <!-- END OF NAV -->
+    <!-- START OF SECTION 1 -->
+    <section class="section-1" id="section-1">
+      <h1>Chiakitea</h1>
+      <h2 class="tagline">Tea Lovers</h2>
+      <img class="img-maintea" src="./assets/main-tea.svg" alt="" />
+    </section>
+    <!--END OF SECTION 1 -->
+    <!-- START OF SECTION 2 -->
+    <section class="section-2" id="section-2">
+      <h3 class="tagline">Pick a Cup</h3>
+      <div id="teas-randomiser-container"></div>
+      <div id="teas-grid-container"></div>
+    </section>
+    <!-- END OF SECTION 2 -->
+    <!-- START OF SECTION 3 -->
+    <section class="section-3" id="section-3">
+      <span class="plant-wrapper">
+        <img
+          src="./assets/plant1.gif"
+          id="scroll-gif"
+          alt="gif"
+          class="plant1"
+        />
+        <img
+          src="./assets/cup-1.svg"
+          alt="selected-cup"
+          class="selectedTeaImg"
+          id="selectedTeaImg"
+        />
+        <img
+          src="./assets/teabag-label.svg"
+          alt="teabag-label"
+          class="teabagLabel"
+          id="teabagLabel"
+        />
+      </span>
+      <form class="form" id="form">
+        <input
+          class="input"
+          type="text"
+          name="input"
+          placeholder="Write Your Thoughts..."
+        />
+        <button class="send-button" type="submit">Send</button>
+      </form>
+    </section>
+    <!-- END OF SECTION 3 -->
+    <!-- START OF SECTION 4 -->
+    <section class="section-4">
+      <h3 class="tagline">Wall of Messages</h3>
+      <div id="message-wall">
+        <!-- <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="./assets/cup-1.svg"
+                alt="section4-cup"
+                class="section4cup"
+              />
+              <img
+                src="./assets/plant2.gif"
+                alt="section4-plant"
+                class="section4plant"
+              />
+            </div>
+            <div class="flip-card-back">
+              <span
+                >Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s</span
+              >
+              <img src="./assets/sparkle.gif" alt="" class="sparkle" />
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!-- END OF SECTION 4 -->
+
+    <!-- START OF FOOTER -->
+    <footer>
+      <h6>Code a Day Development</h6>
+      <img src="./assets/logo-dark.svg" alt="blaahco-logo" />
+      <span>Copyright © <span id="copyright-date"></span></span>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
