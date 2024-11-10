@@ -15,14 +15,14 @@
   --bg-random1: #ff6546;
   --bg-random2: #f3a8c2;
   --bg-random3: #f68c87;
-
+  --font-family: "Mulish", sans-serif;
   font-size: 16px;
 }
 
 body {
   font-size: 2rem;
-  line-height: 1.5; /* Improve readability */
-  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  font-family: var(--font-family);
   background-color: var(--bg-black);
 }
 
@@ -87,3 +87,26 @@ select {
   font-family: inherit; /* Ensure consistent font */
   font-size: inherit; /* Use inherited font size */
 }
+
+/* START OF FOOTER */
+footer {
+  height: 120vh;
+  width: 100vw;
+  z-index: 200;
+  position: absolute;
+  background-color: var(--bg-black);
+  color: var(--bg-white);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+footer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border: none;
+  overflow: hidden;
+}
+
+/* END OF FOOTER */

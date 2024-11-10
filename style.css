@@ -399,31 +399,3 @@ nav span {
 }
 
 /* END OF MENU */
-/* START OF FOOTER */
-footer {
-  min-height: 120vh;
-  width: 100vw;
-  z-index: 200;
-  position: absolute;
-  background-color: var(--bg-black);
-  color: var(--bg-white);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  text-align: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-footer > img {
-  max-height: 70vh;
-}
-
-footer > span {
-  opacity: 0.4;
-  font-family: "Mulish", sans-serif;
-  font-size: 50%;
-  letter-spacing: 1px;
-  text-transform: lowercase;
-}
-/* END OF FOOTER */
